@@ -1,3 +1,63 @@
 .nav-container{
+    height: 8vh;
+    width: 100%;
+    border-radius: 0  0 15px 15px;
+    background-color: white;
+    box-shadow:  11px 11px 10px #868686,
+             -11px -11px 10px #ffffff;
+    position:fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.drawer
+{
+    color: black;
+}
+
+.home-container
+{
+    background-image: url("../images/new-college-chapel-interior-oxford-uk.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+
+}
+.img-blur
+{
+    height: 100vh;
+    width:100%;
+    background-color: rgba(142, 138, 138, 0.6);
+    color: #ffffff;
+    font-style: poppins;
+    font-size: large;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-body
+{
+    top: 50%;
+    left: 50%;
+    transform: translate(60%,60%) ;
+    height: 40vh;
+    width:600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    
+}
+
+.home-header
+{
+    visibility:hidden;
+    color: #ffffff;
+    font-size: xx-large;
+    font-family: quicksand,sans-serif;
     
 }

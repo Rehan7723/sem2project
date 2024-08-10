@@ -1,5 +1,9 @@
+import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
+import FormatAlignJustifySharpIcon from '@mui/icons-material/FormatAlignJustifySharp';
+import HomeIcon from '@mui/icons-material/Home';
 import MailIcon from '@mui/icons-material/Mail';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
+import PersonIcon from '@mui/icons-material/Person';
+import SsidChartIcon from '@mui/icons-material/SsidChart';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Divider from '@mui/material/Divider';
@@ -10,6 +14,7 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import * as React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Nav() {
   const [open, setOpen] = React.useState(false);
@@ -20,36 +25,69 @@ export default function Nav() {
 
   const DrawerList = (
     <Box sx={{ width: 250 }} role="presentation" onClick={toggleDrawer(false)}>
-      <List>
-      <ListItem  disablePadding>
-            <ListItemButton>
+      <List component="nav">
+     
+      <ListItem component={Link} to="/home"   disablePadding>
+      <ListItemButton>
               <ListItemIcon>
-                <InboxIcon />
+                <HomeIcon/>
               </ListItemIcon>
               <ListItemText primary="Home" />
-            </ListItemButton>
+              </ListItemButton>
           </ListItem>
+
       </List>
       
       <Divider />
+
       <List>
-        {['All mail', 'Trash', 'Spam'].map((text, index) => (
-          <ListItem key={text} disablePadding>
+        {/* list#1 */}
+      <ListItem  component={Link} to="/login" disablePadding>
             <ListItemButton>
               <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                <PersonIcon/>
               </ListItemIcon>
-              <ListItemText primary={text} />
+              <ListItemText primary="Profile" />
             </ListItemButton>
           </ListItem>
-        ))}
+
+          {/* list #2 */}
+          <ListItem  disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
+                <CalendarMonthIcon/>
+              </ListItemIcon>
+              <ListItemText primary="Leave" />
+            </ListItemButton>
+          </ListItem>
+
+          {/* list #3 */}
+          <ListItem  disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
+                <SsidChartIcon/>
+              </ListItemIcon>
+              <ListItemText primary="Results" />
+            </ListItemButton>
+          </ListItem>
+
+          {/* list #4 */}
+          <ListItem  disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
+                <MailIcon/>
+              </ListItemIcon>
+              <ListItemText primary="Mail" />
+            </ListItemButton>
+          </ListItem>
+
       </List>
     </Box>
   );
 
   return (
     <div>
-      <Button onClick={toggleDrawer(true)}>Open drawer</Button>
+      <Button onClick={toggleDrawer(true)}><FormatAlignJustifySharpIcon className='drawer' fontSize='large'/></Button>
       <Drawer open={open} onClose={toggleDrawer(false)}>
         {DrawerList}
       </Drawer>
