@@ -16,6 +16,10 @@ import ListItemText from '@mui/material/ListItemText';
 import * as React from 'react';
 import { Link } from 'react-router-dom';
 
+
+
+import '../styles/Home.css';
+
 export default function Nav() {
   const [open, setOpen] = React.useState(false);
 
@@ -42,13 +46,15 @@ export default function Nav() {
 
       <List>
         {/* list#1 */}
-      <ListItem  component={Link} to="/login" disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
+      <ListItem disablePadding>
+      <ListItemButton >
+      <ListItemIcon>
                 <PersonIcon/>
               </ListItemIcon>
               <ListItemText primary="Profile" />
-            </ListItemButton>
+      
+      </ListItemButton>
+            
           </ListItem>
 
           {/* list #2 */}

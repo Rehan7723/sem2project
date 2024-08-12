@@ -7,8 +7,14 @@
              -11px -11px 10px #ffffff;
     position:fixed;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
+}
+.nav-img
+{
+    height: 8vh;
+    width: 200px;
+    
 }
 
 .drawer
@@ -18,7 +24,7 @@
 
 .home-container
 {
-    background-image: url("../images/new-college-chapel-interior-oxford-uk.jpg");
+    background-image: url("../images/new-york-public-library.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
