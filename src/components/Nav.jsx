@@ -2,7 +2,6 @@ import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import FormatAlignJustifySharpIcon from '@mui/icons-material/FormatAlignJustifySharp';
 import HomeIcon from '@mui/icons-material/Home';
 import MailIcon from '@mui/icons-material/Mail';
-import PersonIcon from '@mui/icons-material/Person';
 import SsidChartIcon from '@mui/icons-material/SsidChart';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
@@ -15,17 +14,16 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import * as React from 'react';
 import { Link } from 'react-router-dom';
-
-
-
 import '../styles/Home.css';
+import Profile from './Profile';
 
 export default function Nav() {
-  const [open, setOpen] = React.useState(false);
+  const [open1, setOpen] = React.useState(false);
 
   const toggleDrawer = (newOpen) => () => {
     setOpen(newOpen);
   };
+  
 
   const DrawerList = (
     <Box sx={{ width: 250 }} role="presentation" onClick={toggleDrawer(false)}>
@@ -46,14 +44,8 @@ export default function Nav() {
 
       <List>
         {/* list#1 */}
-      <ListItem disablePadding>
-      <ListItemButton >
-      <ListItemIcon>
-                <PersonIcon/>
-              </ListItemIcon>
-              <ListItemText primary="Profile" />
-      
-      </ListItemButton>
+      <ListItem components={Link} to='/profile' disablePadding>
+            <Profile/>
             
           </ListItem>
 
@@ -86,7 +78,6 @@ export default function Nav() {
               <ListItemText primary="Mail" />
             </ListItemButton>
           </ListItem>
-
       </List>
     </Box>
   );
@@ -94,7 +85,7 @@ export default function Nav() {
   return (
     <div>
       <Button onClick={toggleDrawer(true)}><FormatAlignJustifySharpIcon className='drawer' fontSize='large'/></Button>
-      <Drawer open={open} onClose={toggleDrawer(false)}>
+      <Drawer open={open1} onClose={toggleDrawer(false)}>
         {DrawerList}
       </Drawer>
     </div>

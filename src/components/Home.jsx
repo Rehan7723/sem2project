@@ -1,7 +1,6 @@
+import img from '../images/Ramaiah.png';
 import "../styles/Home.css";
 import Nav from "./Nav";
-import img from '../images/Ramaiah.png';
-
 export default function Home()
 {
     return(
