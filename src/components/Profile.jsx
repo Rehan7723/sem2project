@@ -1,8 +1,8 @@
 import img from '../images/Ramaiah.png';
+import Container from '../styledComponents/Container';
 import "../styles/Home.css";
 import "../styles/profile.css";
 import Nav from "./Nav";
-
 
 
 export default function Profile()
@@ -14,7 +14,7 @@ export default function Profile()
           <Nav/>
           <img src={img} alt="ok" className="nav-img"/>
           </div>
-            <div className='profile-main'>
+            <Container>
               <div className='profile-pic'></div>
               <div className='profile-info'>
                 <h1 className='profile-name'>Rehan Shariff</h1>
@@ -24,8 +24,8 @@ export default function Profile()
                   <li><span>Passing year: </span> 2025</li>
                 </ul>
               </div>
-            </div>
-          </div>
+         </Container>
+         </div>
         </div>
     )
 }
