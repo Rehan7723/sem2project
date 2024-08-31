@@ -6,6 +6,7 @@ import Landing from './components/Landing';
 import PLogin from './components/PLogin';
 import Profile from './components/Profile';
 import SLogin from './components/SLogin';
+import Phome from './components/proctor/Phome';
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
         <Route path='/plogin' element={<PLogin/>}/>
         <Route path='/home' element={<Home/>}/>
         <Route path='/profile' element={<Profile/>}/>
+
+
+        <Route path='/phome' element={<Phome/>}/>
       </Routes>
       </BrowserRouter>
     </div>
