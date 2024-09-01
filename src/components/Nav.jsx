@@ -58,7 +58,7 @@ export default function Nav() {
           </ListItem>
 
           {/* list #2 */}
-          <ListItem  disablePadding>
+          <ListItem component={Link} to='/leave'  disablePadding>
             <ListItemButton>
               <ListItemIcon>
                 <CalendarMonthIcon/>

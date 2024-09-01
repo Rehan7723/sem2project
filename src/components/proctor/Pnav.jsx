@@ -58,12 +58,12 @@ export default function Pnav() {
           </ListItem>
 
           {/* list #2 */}
-          <ListItem  disablePadding>
+          <ListItem component={Link} to="/pleave"  disablePadding>
             <ListItemButton>
               <ListItemIcon>
                 <CalendarMonthIcon/>
               </ListItemIcon>
-              <ListItemText primary="Leave" />
+              <ListItemText primary="Leave requests" />
             </ListItemButton>
           </ListItem>
 
@@ -93,7 +93,7 @@ export default function Pnav() {
               <ListItemIcon>
                 <Person4Icon/>
               </ListItemIcon>
-              <ListItemText primary="Your Proctor" />
+              <ListItemText primary="Me" />
             </ListItemButton>
           </ListItem>
 

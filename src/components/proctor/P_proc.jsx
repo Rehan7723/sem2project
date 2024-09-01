@@ -28,7 +28,6 @@ export default function Pproc()
               </div>
          </Container>
          </div>
-        </div>
-        
+        </div>  
     )
 }

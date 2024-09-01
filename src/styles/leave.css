@@ -1,0 +1,123 @@
+.leave-main-box
+{
+  display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-items: center;
+    justify-content: center;
+    height:84vh;
+}
+
+table,td,th
+{
+  justify-content: center;
+  padding: 0;
+  /* border:2px solid black; */
+}
+
+table{
+  width:100%;
+}
+
+
+th{
+  color:#212121
+}
+
+.submit-tr{
+  padding: 2%;
+}
+
+.container-head
+{
+  display: flex;
+  flex-direction: row;
+}
+.vis{
+  visibility:hidden
+}
+
+.reason-text
+{
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.container-content
+{
+  display: flex;
+  flex-direction: row;
+}
+small{
+  color: red;
+  margin-bottom: 1px;
+}
+
+.date-form
+{
+    box-sizing: inherit;
+    height: 200px;
+    width:300px;
+    border:2px dotted black;
+    border-style: dashed;
+    background-color: white;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 48px 35px -48px #e8e8e8;
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem;
+    padding-top: 5%;
+    box-sizing:content-box;
+}
+
+
+
+
+
+
+
+
+/* From Uiverse.io by csemszepp */ 
+.custum-file-upload {
+    height: 200px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    gap: 20px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #e8e8e8;
+    background-color: #212121;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0px 48px 35px -48px #e8e8e8;
+  }
+  
+  .custum-file-upload .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .custum-file-upload .icon svg {
+    height: 80px;
+    fill: #e8e8e8;
+  }
+  
+  .custum-file-upload .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .custum-file-upload .text span {
+    font-weight: 400;
+    color: #e8e8e8;
+  }
+  
+  .custum-file-upload input {
+    display: none;
+  }

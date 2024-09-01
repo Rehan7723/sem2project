@@ -1,8 +1,13 @@
 import img from '../../images/Ramaiah.png';
+import Container from '../../styledComponents/Container';
 import "../../styles/Home.css";
+import '../../styles/leave.css';
 import Pnav from './Pnav';
-export default function Phome()
+
+export default function Pleave()
 {
+
+
     return(
         <div className="home-container">
           <div className="img-blur">
@@ -10,13 +15,13 @@ export default function Phome()
           <Pnav/>
           <img src={img} alt="ok" className="nav-img"/>
           </div>
-          <div className="home-body">
-            <h1 className="head-header">ONLY THE<br/>
-            BRAVE<br/>
-            CHOOSE TO<br/>
-            TEACH</h1>
-          </div>
+          <Container className='leave-main-box'>
+                
+          </Container>
+          
           </div>
         </div>
     )
 }
+
+
