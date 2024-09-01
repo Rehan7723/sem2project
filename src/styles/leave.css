@@ -6,6 +6,7 @@
     justify-items: center;
     justify-content: center;
     height:84vh;
+    padding-bottom: 2%;
 }
 
 table,td,th
@@ -24,9 +25,6 @@ th{
   color:#212121
 }
 
-.submit-tr{
-  padding: 2%;
-}
 
 .container-head
 {
@@ -69,6 +67,18 @@ small{
     padding: 1.5rem;
     padding-top: 5%;
     box-sizing:content-box;
+}
+
+.leave-buttons>Button
+{
+  margin-right: 1%;
+}
+
+
+.fonts
+{
+  font-family: poppins;
+    font-size: x-large;
 }
 
 

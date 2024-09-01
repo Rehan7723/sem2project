@@ -107,8 +107,7 @@ export default function SLogin() {
                 control={<Checkbox value="remember" color="primary" />}
                 label="Remember me"
               />
-              <Link to='/home'>
-              <Button
+              <Button href='/home'
                 type="submit"
                 fullWidth
                 variant="contained"
@@ -116,7 +115,6 @@ export default function SLogin() {
               >
                 Sign In
               </Button>
-              </Link>
               <Grid container>
                 <Grid item xs>
                   <Link href="#" variant="body2">

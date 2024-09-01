@@ -19,8 +19,8 @@ export default function Intro()
   aria-label="Disabled button group" className="login-form">
     
     <h1>Login</h1>
-    <Link to="/login"><Button  color="error" className="login-btn" endIcon={<SendIcon className="icon"/>} >Student </Button><br/></Link>
-   <Link to="/plogin"> <br/><Button  color="error" className="login-btn" endIcon={<SendIcon className="icon"/>} >Proctor </Button></Link>
+    <Link to="/login"><Button variant="outlined"  color="error" className="login-btn" endIcon={<SendIcon className="icon"/>} >Student </Button><br/></Link>
+   <Link to="/plogin"> <br/><Button variant="outlined" color="error" className="login-btn" endIcon={<SendIcon className="icon"/>} >Proctor </Button></Link>
 </div>
         </div>
     )

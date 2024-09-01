@@ -5,7 +5,6 @@ import LogoutIcon from '@mui/icons-material/Logout';
 import MailIcon from '@mui/icons-material/Mail';
 import PersonIcon from '@mui/icons-material/Person';
 import Person4Icon from '@mui/icons-material/Person4';
-import SsidChartIcon from '@mui/icons-material/SsidChart';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Divider from '@mui/material/Divider';
@@ -48,7 +47,7 @@ export default function Pnav() {
 
       <List>
         {/* list#1 onClick={handleClickOpen}*/}
-        <ListItem component={Link} to="/pprofile"   disablePadding>
+        <ListItem component={Link} to="/stdlist"   disablePadding>
       <ListItemButton>
               <ListItemIcon>
                 <PersonIcon/>
@@ -68,14 +67,14 @@ export default function Pnav() {
           </ListItem>
 
           {/* list #3 */}
-          <ListItem  disablePadding>
+          {/* <ListItem  disablePadding>
             <ListItemButton>
               <ListItemIcon>
                 <SsidChartIcon/>
               </ListItemIcon>
               <ListItemText primary="Results" />
             </ListItemButton>
-          </ListItem>
+          </ListItem> */}
 
           {/* list #4 */}
           <ListItem  disablePadding>

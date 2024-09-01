@@ -83,7 +83,7 @@ export default function Leave()
                     </tr>
                   <tr >
 
-                  <td className='submit-tr' colSpan={'2'}>
+                  <td colSpan={'2'}>
                   <center>
                    <Button variant="contained" endIcon={<SendIcon />}
                    onClick={handleClick} >

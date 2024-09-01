@@ -1,20 +1,20 @@
-import * as React from 'react';
+import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Avatar from '@mui/material/Avatar';
+import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
-import CssBaseline from '@mui/material/CssBaseline';
-import TextField from '@mui/material/TextField';
-import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
+import CssBaseline from '@mui/material/CssBaseline';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import Grid from '@mui/material/Grid';
 import Link from '@mui/material/Link';
 import Paper from '@mui/material/Paper';
-import Box from '@mui/material/Box';
-import Grid from '@mui/material/Grid';
-import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
+import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import '../styles/login.css';
+import * as React from 'react';
 import img from '../images/back.jpg';
 import logo from '../images/images-removebg-preview.png';
+import '../styles/login.css';
 
 function Copyright(props) {
   return (
@@ -83,6 +83,7 @@ export default function SignInSide() {
               Sign in
             </Typography>
             <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 1 }}>
+              <form>
               <TextField
                 margin="normal"
                 required
@@ -108,6 +109,7 @@ export default function SignInSide() {
                 label="Remember me"
               />
               <Button
+                href='/phome'
                 type="submit"
                 fullWidth
                 variant="contained"
@@ -115,6 +117,7 @@ export default function SignInSide() {
               >
                 Sign In
               </Button>
+              </form>
               <Grid container>
                 <Grid item xs>
                   <Link href="#" variant="body2">

@@ -11,6 +11,7 @@ import SLogin from './components/SLogin';
 import Pproc from './components/proctor/P_proc';
 import Phome from './components/proctor/Phome';
 import Pleave from './components/proctor/Pleave';
+import Stdlist from './components/proctor/Stdlist';
 
 function App() {
   return (
@@ -29,6 +30,10 @@ function App() {
         <Route path='/phome' element={<Phome/>}/>
         <Route path='/pproc' element={<Pproc/>}/>
         <Route path='/pleave' element={<Pleave/>}/>
+        <Route path='/stdlist' element={<Stdlist/>}/>
+
+
+
         
       </Routes>
       </BrowserRouter>
