@@ -1,3 +1,7 @@
 S1
 -> added leave components for both student and proctor
 -> added student list and leave list
+
+S2
+
+-> added all the components to the chat components of both student and proctor
