@@ -14,8 +14,8 @@ const Chatbox = () => {
   };
 
   return (
-    <Paper elevation={3} style={{ padding: '16px', maxWidth: '800px', margin: '20px auto', height: '500px', display: 'flex', flexDirection: 'column' }}>
-      <Typography variant="h6" style={{ textAlign: 'center', marginBottom: '8px' }}>Chat</Typography>
+    <Paper elevation={3} style={{ padding: '16px', width:'80%', margin: '20px auto', height: '500px', display: 'flex', flexDirection: 'column' }}>
+      <Typography variant="h6" style={{ textAlign: 'center', marginBottom: '8px' }}>Chat </Typography>
       <Box style={{ flexGrow: 1, overflowY: 'auto', padding: '8px', marginBottom: '8px', backgroundColor: '#f0f0f0', borderRadius: '8px' }}>
         <List>
           {messages.map((msg, index) => (
@@ -40,8 +40,10 @@ const Chatbox = () => {
       <Box style={{ display: 'flex', alignItems: 'center' }}>
         <TextField
           variant="outlined"
+          autoComplete='off'
           placeholder="Type a message"
           fullWidth
+          marginBottom="2%"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           onKeyPress={(e) => {

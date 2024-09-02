@@ -4,6 +4,7 @@ import "../styles/Home.css";
 import '../styles/leave.css';
 import Chatbox from './Chatbox';
 import Nav from "./Nav";
+
 export default function Leave()
 {
 
@@ -15,7 +16,7 @@ export default function Leave()
           <Nav/>
           <img src={img} alt="ok" className="nav-img"/>
           </div>
-          <Container>
+          <Container style={{height: '83vh'}}>
             <Chatbox/>
           </Container>
           

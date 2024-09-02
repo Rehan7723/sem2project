@@ -77,7 +77,7 @@ export default function Pnav() {
           </ListItem> */}
 
           {/* list #4 */}
-          <ListItem  disablePadding>
+          <ListItem component={Link} to='/pmail'  disablePadding>
             <ListItemButton>
               <ListItemIcon>
                 <MailIcon/>
