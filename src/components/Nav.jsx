@@ -78,7 +78,7 @@ export default function Nav() {
           </ListItem>
 
           {/* list #4 */}
-          <ListItem  disablePadding>
+          <ListItem component={Link} to='/mail' disablePadding>
             <ListItemButton>
               <ListItemIcon>
                 <MailIcon/>

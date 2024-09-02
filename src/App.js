@@ -4,6 +4,7 @@ import './App.css';
 import Home from './components/Home';
 import Landing from './components/Landing';
 import Leave from './components/Leave';
+import Mail from './components/Mail';
 import PLogin from './components/PLogin';
 import Proc from './components/Proc';
 import Profile from './components/Profile';
@@ -25,6 +26,7 @@ function App() {
         <Route path='/profile' element={<Profile/>}/>
         <Route path='/proc' element={<Proc/>}/>
         <Route path='/leave' element={<Leave/>}/>
+        <Route path='/mail' element={<Mail/>}/>
 
 
         <Route path='/phome' element={<Phome/>}/>
