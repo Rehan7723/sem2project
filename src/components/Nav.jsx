@@ -68,7 +68,7 @@ export default function Nav() {
           </ListItem>
 
           {/* list #3 */}
-          <ListItem  disablePadding>
+          <ListItem component={Link} to='/result'  disablePadding>
             <ListItemButton>
               <ListItemIcon>
                 <SsidChartIcon/>

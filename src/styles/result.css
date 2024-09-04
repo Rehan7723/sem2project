@@ -1,0 +1,14 @@
+.chat-box{
+    background-color: white;
+    /* padding: 5%;
+    box-sizing:content-box; */
+
+}
+.bar-chart{
+    min-width: 300px;
+    min-height: 200px;
+}
+
+.alert-box{
+    min-width: 500px;;
+}

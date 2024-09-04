@@ -17,6 +17,7 @@ import * as React from 'react';
 import "../../styles/Home.css";
 import '../../styles/leave.css';
 import "../../styles/profile.css";
+import Graph from '../Graph';
 
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
@@ -98,18 +99,14 @@ export default function Stdtable() {
         className='alert-box'
       >
         <DialogTitle id="alert-dialog-title">
-          <h1>Profile</h1>
+          <h1>Results</h1>
         </DialogTitle>
         <DialogContent>
           <DialogContentText id="alert-dialog-description">
           
               <div className='profile-info'>
                 <h2 className='profile-name1'>Rehan Shariff</h2>
-                <ul>
-                  <li><span>USN: </span> 1MS23MC081</li>
-                  <li><span>Semester: </span> 2</li>
-                  <li><span>Passing year: </span> 2025</li>
-                </ul>
+                <Graph/>
               </div>
           </DialogContentText>
         </DialogContent>
