@@ -37,11 +37,11 @@ function createData(name, calories, fat, carbs, protein) {
 }
 
 const rows = [
-    createData('Ethan Parker', '1MS23MC085', 2, 7.34),
-    createData('Sophia Bennett', '1MS23MC014', 2, 9.58),
-    createData('Olivia Carter', '1MS23MC092', 2, 8.12),
-    createData('Liam Davis', '1MS23MC007', 2, 7.89),
-    createData('Emma Harrison', '1MS23MC056', 2, 9.03),
+    createData('Ethan Parker', '09/09/2024','10/09/2024', 2),
+    createData('Sophia Bennett', '7/09/2024','' ,1),
+    createData('Olivia Carter', '10/09/2024','14/09/2024', 5),
+    createData('Liam Davis', '24/09/2024','', 1),
+    createData('Emma Harrison', '26/09/2024','27/09/204', 2),
 ];
 
 export default function LeaveTable() {
